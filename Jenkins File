@@ -1,0 +1,24 @@
+pipeline {
+  agent any
+    tools {
+      git 'git'
+      maven 'maven'
+}
+  stages {
+    stage('Source code') {
+      steps {
+        git 'https://github.com/theunforgivenme/mohit-flipamazon.git'
+      }
+    }
+	stage('Maven Build') {
+      steps {
+        bat 'mvn clean install'       
+	   }
+    }
+            stage('Send Email') {
+            steps {
+                emailext attachLog: true, body: 'true, body: \'Hope You are Happy Learning ! This email is Sent from Jenkins Your build is Good', compressLog: true, subject: '%env.JOB_NAME% %env.BUILD_NUMBER%', to: 'vemanavijaykumar154@gmail.com,Manoharreddyvits@gmail.com,nakramesh@gmail.com,stnl22@gmail.com,vinoth.avk@gmail.com',from:"jamcrackercsp1@gmail.com"
+            }           
+       }
+  }
+}
