@@ -12,7 +12,7 @@
         <div class="header-content-inner">
             <h1 id="homeHeading"> Upgrade Your Skills to DevOps</h1>
             <hr>
-            <p>FlipAmazon is the Big Online Store for All kind of products. We also free delivery all kind of our products as your ordering! So we are always stay-connecting with all customers!</p>
+            <p>Mohit from VS Code. We also free delivery all kind of our products as your ordering! So we are always stay-connecting with all customers!</p>
             <a href="#about" class="btn btn-primary btn-xl page-scroll sr-button">To Know What We've Provided here!</a>
         </div>
     </div>
